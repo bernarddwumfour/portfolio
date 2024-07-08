@@ -36,15 +36,15 @@ const page = () => {
         <div className="circle w-96 h-96 absolute -bottom-8 -right-8 rounded-full opacity-20 bg-indigo-600 blur-3xl z-0 ">
           {" "}
         </div>
-        <div className="py-40 flex items-center flex-col w-full relative z-10">
-          <h1 className="text-3xl lg:text-5xl text-indigo-500 leading-[150%] font-bold ">
+        <div className="py-40 pt-32 flex items-center flex-col w-full relative z-10">
+          <h1 className="text-3xl lg:text-[4.5rem] text-indigo-500 leading-[150%] font-bold ">
             Hi , I&apos;m Bernard
           </h1>
-          <p className="py-3 text-gray-600 text-lg md:text-xl">
-            A Full Stack web Developer And UI/UI Designer .
+          <p className="py-3 dark:text-gray-300 text-gray-600 text-[1.05rem] md:text-xl">
+            A passionate Product Designer And Fullstack Developer dedicated to crafting engaging and dynamic web applications.
           </p>
-          <p className="text-md pb-4 dark:text-gray-200 text-gray-500">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          <p className="text-md pb-4 dark:text-gray-500 text-gray-500">
+          Let's build something amazing together!
           </p>
 
           <a href="#">
@@ -69,7 +69,7 @@ const page = () => {
               My projects
             </h2>
             <p className="md:py-2 py-1 text-sm lg:text-[1.05rem] text-gray-600 dark:text-gray-300">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. At!
+            Portfolio of Completed Projects: Showcasing My Expertise in Full Stack Development
             </p>
           </div>
 
@@ -100,7 +100,7 @@ const page = () => {
               About Me
             </h2>
             <p className="md:py-2 py-1 text-sm lg:text-[1.05rem] text-gray-600 dark:text-gray-300">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. At!
+            Dynamic Full Stack Developer and Problem Solver.
             </p>
           </div>
 
@@ -111,14 +111,7 @@ const page = () => {
 
             <div className="">
               <p className="text-sm lg:text-md leading-7 lg:leading-8 md:px-6 text-gray-500 dark:text-gray-200">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus
-                temporibus ratione, ipsum iure quis suscipit, labore architecto
-                at maiores consectetur ipsam molestias eos sit deleniti
-                cupiditate illo commodi aspernatur reiciendis inventore.
-                Reprehenderit rerum esse doloribus cupiditate illum natus labore
-                omnis fuga distinctio molestiae id voluptatibus, perspiciatis
-                similique nisi sapiente. Deserunt, tenetur cupiditate.
-              </p>
+              I am a passionate Full Stack Developer with experience in building dynamic and user-friendly web applications. Skilled in HTML, CSS, JavaScript, React.js, Next.js, PHP, Laravel, and MySQL, I thrive on creating innovative solutions. As a Product Designer proficient in Figma and Photoshop, I bring a keen eye for design to create cohesive and visually appealing user experiences. Let's build something amazing together!              </p>
             </div>
           </div>
         </div>
@@ -131,14 +124,14 @@ const page = () => {
               My Skills
             </h2>
             <p className="md:py-2 py-1 text-sm lg:text-[1.05rem] text-gray-600 dark:text-gray-300">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. At!
+            Skills and Expertise in Fullstack Web Development
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-center">
            {skills && skills.map(skill  => (
              <div className="flex gap-4 items-center bg-white rounded-lg px-2 py-2 shadow-[0px_0px_4px_0px_rgba(0,0,0,0.1)] dark:bg-darkerbg " key={skill.skill}>
-             <span className="p-3 lg:p-5 text-white bg-indigo-600 rounded-md text-lg lg:text-4xl">
+             <span className="p-3 lg:p-5 text-white bg-indigo-600 rounded-md text-xl lg:text-4xl">
               {skill.image}
              </span>
              <p className="text-gray-600 text-lg">{skill.skill}</p>
@@ -155,7 +148,7 @@ const page = () => {
               Contact Me
             </h2>
             <p className="md:py-2 py-1 text-sm lg:text-[1.05rem] text-gray-600 dark:text-gray-300">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. At!
+            Contact Me for Collaboration and Opportunities.
             </p>
           </div>
 
