@@ -44,7 +44,7 @@ const page = () => {
             A passionate Product Designer And Fullstack Developer dedicated to crafting engaging and dynamic web applications.
           </p>
           <p className="text-md pb-4 dark:text-gray-500 text-gray-500">
-          Let's build something amazing together!
+          Let&apos;s build something amazing together!
           </p>
 
           <a href="#">
@@ -111,7 +111,7 @@ const page = () => {
 
             <div className="">
               <p className="text-sm lg:text-md leading-7 lg:leading-8 md:px-6 text-gray-500 dark:text-gray-200">
-              I am a passionate Full Stack Developer with experience in building dynamic and user-friendly web applications. Skilled in HTML, CSS, JavaScript, React.js, Next.js, PHP, Laravel, and MySQL, I thrive on creating innovative solutions. As a Product Designer proficient in Figma and Photoshop, I bring a keen eye for design to create cohesive and visually appealing user experiences. Let's build something amazing together!              </p>
+              I am a passionate Full Stack Developer with experience in building dynamic and user-friendly web applications. Skilled in HTML, CSS, JavaScript, React.js, Next.js, PHP, Laravel, and MySQL, I thrive on creating innovative solutions. As a Product Designer proficient in Figma and Photoshop, I bring a keen eye for design to create cohesive and visually appealing user experiences. Let&apos;s build something amazing together!              </p>
             </div>
           </div>
         </div>
