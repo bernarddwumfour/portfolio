@@ -38,7 +38,7 @@ const page = () => {
         </div>
         <div className="py-40 flex items-center flex-col w-full relative z-10">
           <h1 className="text-3xl lg:text-5xl text-indigo-500 leading-[150%] font-bold ">
-            Hi , I'm Bernard
+            Hi , I&apos;m Bernard
           </h1>
           <p className="py-3 text-gray-600 text-lg md:text-xl">
             A Full Stack web Developer And UI/UI Designer .
@@ -137,7 +137,7 @@ const page = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-center">
            {skills && skills.map(skill  => (
-             <div className="flex gap-4 items-center bg-white rounded-lg px-2 py-2 shadow-[0px_0px_4px_0px_rgba(0,0,0,0.1)] dark:bg-darkerbg ">
+             <div className="flex gap-4 items-center bg-white rounded-lg px-2 py-2 shadow-[0px_0px_4px_0px_rgba(0,0,0,0.1)] dark:bg-darkerbg " key={skill.skill}>
              <span className="p-3 lg:p-5 text-white bg-indigo-600 rounded-md text-lg lg:text-4xl">
               {skill.image}
              </span>
