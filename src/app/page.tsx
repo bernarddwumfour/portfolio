@@ -95,7 +95,7 @@ const page = () => {
             Let&apos;s build something amazing together!
           </p>
 
-          <a href="#">
+          <a href="/Bernard Dwumfour_CV.pdf" download>
             <Button>Download CV</Button>
           </a>
         </div>
@@ -264,7 +264,7 @@ const page = () => {
                     htmlFor="name"
                     className=" dark:text-gray-300 text-gray-600 mt-3 text-sm"
                   >
-                    Your name
+                    Your message
                   </label>
                 </div>
 
