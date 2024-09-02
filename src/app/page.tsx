@@ -57,7 +57,7 @@ let projects: {
       "A privacy policy sumurisation website",
     image: "/poleasy.png",
     technologies: ["Nextjs", "SASS", "Typescript"],
-    url: "https://final-year-project-five-ivory.vercel.app/",
+    url: "final-year-project-five-ivory.vercel.app/",
   },
   {
     name: "Portfolio",
