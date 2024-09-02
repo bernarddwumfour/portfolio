@@ -52,12 +52,12 @@ let projects: {
     url: "https://www.figma.com/file/EeTZQiqhsiJ6OanfDcDcwh/Untitled?type=design&node-id=0-1&mode=design&t=ksTvfDoJ1BXyH7ZJ-0",
   },
   {
-    name: "Foodis",
+    name: "PolEasy",
     description:
-      "A Restaurant website built with Nextjs, tailwindCSS and Typescript",
-    image: "/foodies.png",
-    technologies: ["Nextjs", "TaiilwindCSS", "Typescript"],
-    url: "foodies-liard.vercel.app",
+      "A privacy policy sumurisation website",
+    image: "/poleasy.png",
+    technologies: ["Nextjs", "SASS", "Typescript"],
+    url: "https://final-year-project-five-ivory.vercel.app/",
   },
   {
     name: "Portfolio",
