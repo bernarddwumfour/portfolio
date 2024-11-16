@@ -85,7 +85,7 @@ const page = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <div className="relative overflow-hidden bg-gray-100 h-64 lg:h-96 rounded-2xl dark:bg-gray-900">
+                  <div className="relative overflow-hidden bg-gray-100  aspect-[5/3] rounded-2xl dark:bg-gray-900">
                     <Image
                       src={project.image}
                       className="object-cover"

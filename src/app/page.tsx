@@ -130,7 +130,7 @@ const page = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <div className="relative overflow-hidden bg-gray-100 h-64 lg:h-96 rounded-2xl dark:bg-gray-900">
+                  <div className="relative overflow-hidden bg-gray-100 w-full aspect-[5/3] rounded-2xl dark:bg-gray-900">
                     <Image
                       src={project.image}
                       className="object-cover"
@@ -159,7 +159,7 @@ const page = () => {
           </div>
 
           <div className="grid lg:grid-cols-2 grid-cols-1 gap-8 items-center">
-            <div className="bg-gray-100 relative overflow-hidden h-64 lg:h-96 rounded-2xl dark:bg-gray-900">
+            <div className="bg-gray-100 relative overflow-hidden  aspect-[5/3]  rounded-2xl dark:bg-gray-900">
               <Image
                 className=" object-cover"
                 src={"/about.jpeg"}
@@ -272,7 +272,7 @@ const page = () => {
               </form>
             </div>
 
-            <div className="bg-gray-100 h-64 lg:h-96 rounded-2xl dark:bg-gray-900 relative">
+            <div className="bg-gray-100   aspect-[5/3] rounded-2xl dark:bg-gray-900 relative">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3219.026338478856!2d-0.19587219308806253!3d5.64993214364426!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdf9c7ebaeabe93%3A0xd78257e67498c1a0!2sUniversity%20of%20Ghana!5e0!3m2!1sen!2sgh!4v1716835348943!5m2!1sen!2sgh"  style={{border:0,position : "absolute",width :"100%",height : "100%"}}  loading="lazy" ></iframe>
 
             </div>
