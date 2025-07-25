@@ -15,6 +15,7 @@ import { BiLogoTailwindCss } from "react-icons/bi";
 import { RiNextjsFill } from "react-icons/ri";
 import { FaSass } from "react-icons/fa";
 import Link from "next/link";
+import ParticleBackground from "./components/Particles";
 
 let skills: { skill: string; image: ReactNode }[] = [
   { skill: "HTML", image: <FaHtml5 /> },
@@ -75,15 +76,19 @@ const page = () => {
     <main className="dark:bg-darkbg min-h-screen">
       <section
         id="hero"
-        className="text-center relative py-12 md:py-36 lg:px-16 px-3 md:px-12 flex flex-col-reverse lg:flex-row gap-6 lg:gap-12 items-center overflow-hidden"
+        className="text-center relative py-12 md:py-36 h-screen lg:px-16 px-3 md:px-12 flex flex-col-reverse lg:flex-row gap-6 lg:gap-12 items-center overflow-hidden"
       >
-        <div className="circle w-96 h-96 absolute -top-8 -left-8 rounded-full opacity-40 bg-indigo-700 blur-[180px] z-0 ">
+        <div className="absolute w-full h-full z-10">
+        <ParticleBackground />
+        </div>
+        <div className="circle w-96 h-96 absolute -top-8 -left-8 rounded-full opacity-50 bg-indigo-700 blur-[180px] z-0 ">
           {" "}
         </div>
-        <div className="circle w-96 h-96 absolute -bottom-8 -right-8 rounded-full opacity-20 bg-indigo-600 blur-3xl z-0 ">
+        <div className="circle w-96 h-96 absolute -bottom-8 -right-8 rounded-full opacity-25 bg-indigo-600 blur-3xl z-0 ">
           {" "}
         </div>
         <div className="py-40 pt-32 flex items-center flex-col w-full relative z-10">
+        
           <h1 className="text-3xl lg:text-[4.5rem] text-indigo-500 leading-[150%] font-bold ">
             Hi , I&apos;m Bernard
           </h1>
@@ -91,7 +96,7 @@ const page = () => {
             A passionate Product Designer And Fullstack Developer dedicated to
             crafting engaging and dynamic web applications.
           </p>
-          <p className="text-md pb-4 dark:text-gray-500 text-gray-500">
+          <p className="text-md pb-4 text-indigo-500 font-semibold">
             Let&apos;s build something amazing together!
           </p>
 
