@@ -6,6 +6,21 @@
 *{
   font-family: "Nunito", sans-serif;
 }
+
+main {
+  scroll-snap-type: y mandatory;
+  scroll-behavior: auto;
+  overflow-y: scroll; /* or auto */
+  height: 100vh; /* Essential for scroll container */
+}
+
+
+/* Section styling */
+.snap-section {
+  scroll-snap-align: start;
+  scroll-snap-stop: always; /* vs 'normal' (default) */
+}
+
 /* 
 :root {
   --foreground-rgb: 0, 0, 0;
@@ -36,3 +51,5 @@ body {
     text-wrap: balance;
   }
 } */
+
+

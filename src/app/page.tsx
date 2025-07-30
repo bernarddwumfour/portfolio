@@ -16,6 +16,7 @@ import { RiNextjsFill } from "react-icons/ri";
 import { FaSass } from "react-icons/fa";
 import Link from "next/link";
 import ParticleBackground from "./components/Particles";
+import TypingAnimation from "./components/TypingAnimation";
 
 let skills: { skill: string; image: ReactNode }[] = [
   { skill: "HTML", image: <FaHtml5 /> },
@@ -38,37 +39,37 @@ let projects: {
   technologies: string[];
   url: string;
 }[] = [
-  {
-    name: "Florel",
-    description: "A flower website Ui designed with Figma",
-    image: "/plantui.png",
-    technologies: ["Figma"],
-    url: "https://www.figma.com/design/rp4oDJ7XWsH5z50KwSACUd/Untitled?node-id=0-1&t=uq5xTFgBtajguovh-0",
-  },
-  {
-    name: "Herbal UI",
-    description: "A  website Ui for herbal products designed with Figma",
-    image: "/herbalui.png",
-    technologies: ["Figma"],
-    url: "https://www.figma.com/file/EeTZQiqhsiJ6OanfDcDcwh/Untitled?type=design&node-id=0-1&mode=design&t=ksTvfDoJ1BXyH7ZJ-0",
-  },
-  {
-    name: "PolEasy",
-    description:
-      "A privacy policy sumurisation website",
-    image: "/poleasy.png",
-    technologies: ["Nextjs", "SASS", "Typescript"],
-    url: "final-year-project-five-ivory.vercel.app/",
-  },
-  {
-    name: "Portfolio",
-    description:
-      "My previous portfolio website with some websites I developed whiles still learning to code.",
-    image: "/portfolio.png",
-    technologies: ["HTML", "CSS", "Reactjs"],
-    url: "bernarddwumfour.vercel.app",
-  },
-];
+    {
+      name: "Florel",
+      description: "A flower website Ui designed with Figma",
+      image: "/plantui.png",
+      technologies: ["Figma"],
+      url: "https://www.figma.com/design/rp4oDJ7XWsH5z50KwSACUd/Untitled?node-id=0-1&t=uq5xTFgBtajguovh-0",
+    },
+    {
+      name: "Herbal UI",
+      description: "A  website Ui for herbal products designed with Figma",
+      image: "/herbalui.png",
+      technologies: ["Figma"],
+      url: "https://www.figma.com/file/EeTZQiqhsiJ6OanfDcDcwh/Untitled?type=design&node-id=0-1&mode=design&t=ksTvfDoJ1BXyH7ZJ-0",
+    },
+    {
+      name: "PolEasy",
+      description:
+        "A privacy policy sumurisation website",
+      image: "/poleasy.png",
+      technologies: ["Nextjs", "SASS", "Typescript"],
+      url: "final-year-project-five-ivory.vercel.app/",
+    },
+    {
+      name: "Portfolio",
+      description:
+        "My previous portfolio website with some websites I developed whiles still learning to code.",
+      image: "/portfolio.png",
+      technologies: ["HTML", "CSS", "Reactjs"],
+      url: "bernarddwumfour.vercel.app",
+    },
+  ];
 
 const page = () => {
   let dark = true;
@@ -76,24 +77,44 @@ const page = () => {
     <main className="dark:bg-darkbg min-h-screen">
       <section
         id="hero"
-        className="text-center relative py-12 md:py-36 h-screen lg:px-16 px-3 md:px-12 flex flex-col-reverse lg:flex-row gap-6 lg:gap-12 items-center overflow-hidden"
+        className="text-center snap-section relative py-12 md:py-36 h-screen lg:px-16 px-3 md:px-12 flex flex-col-reverse lg:flex-row gap-6 lg:gap-12 items-center overflow-hidden"
       >
         <div className="absolute w-full h-full z-10">
-        <ParticleBackground />
+          <ParticleBackground id="1" />
         </div>
-        <div className="circle w-96 h-96 absolute -top-8 -left-8 rounded-full opacity-50 bg-indigo-700 blur-[180px] z-0 ">
+        <div className="circle w-96 h-96 absolute -top-8 -left-8 rounded-full opacity-40 bg-indigo-700 blur-[180px] z-0 ">
           {" "}
         </div>
-        <div className="circle w-96 h-96 absolute -bottom-8 -right-8 rounded-full opacity-25 bg-indigo-600 blur-3xl z-0 ">
+        <div className="circle w-96 h-96 absolute -bottom-8 -right-8 rounded-full opacity-20 bg-indigo-600 blur-3xl z-0 ">
           {" "}
         </div>
-        <div className="py-40 pt-32 flex items-center flex-col w-full relative z-10">
-        
+        <div className="py-40 pt-32 flex items-center flex-col w-full relative z-10 ">
+
           <h1 className="text-3xl lg:text-[4.5rem] text-indigo-500 leading-[150%] font-bold ">
             Hi , I&apos;m Bernard
           </h1>
-          <p className="py-3 dark:text-gray-300 text-gray-600 text-[1.05rem] md:text-xl">
-            A passionate Product Designer And Fullstack Developer dedicated to
+          <p className="py-3 dark:text-gray-300 text-gray-600 text-[1.15rem] md:text-xl">
+            A passionate  <span className="text-indigo-600 font-bold dark:bg-darkbg bg-white p-1">
+              <TypingAnimation
+                id={"1"}
+                sequence={[
+                  // Same substring at the start will only be typed out once, initially
+                  'Frontend Developer💻',
+                  2000, // wait 1s before replacing "Mice" with "Hamsters"
+                  'Backend Developer🛠️',
+                  2000,
+                  'Ui/UX Engineer🎨',
+                  2000,
+                  'Fullstack Develover🌐',
+                  2000
+                ]}
+                wrapper="span"
+                speed={50}
+                style={{ fontSize: '1.15rem', display: 'inline-block' }}
+              // repeat={Infinity}
+              />
+
+            </span> dedicated to
             crafting engaging and dynamic web applications.
           </p>
           <p className="text-md pb-4 text-indigo-500 font-semibold">
@@ -115,10 +136,21 @@ const page = () => {
         </div> */}
       </section>
 
-      <section id="projects">
+      <section id="projects" className="sticky top-0 left-0 bg-white dark:bg-darkbg snap-section  overflow-y-scroll overflow-x-hidden overscroll-y-auto h-screen  scrollbar-hide">
+
+        <div className="circle w-96 h-96 absolute -top-8 -left-8 rounded-full opacity-40 bg-indigo-700 blur-[180px] z-0 ">
+          {" "}
+        </div>
+        <div className="circle w-96 h-96 absolute -bottom-8 -right-8 rounded-full opacity-20 bg-indigo-600 blur-3xl z-0 ">
+          {" "}
+        </div>
+        <div className="circle w-96 h-96 absolute -translate-y-1/2 -translate-x-1/2 top-1/2 left-1/2 rounded-full opacity-40 bg-indigo-600 blur-3xl z-0 ">
+          {" "}
+        </div>
+
         <div className="py-12 md:py-32 lg:px-24 px-4 md:px-10">
           <div className="pb-12">
-            <h2 className="text-xl md:text-2xl lg:text-3xl text-indigo-500">
+            <h2 className="text-xl md:text-2xl lg:text-3xl text-indigo-500 font-semibold">
               My projects
             </h2>
             <p className="md:py-2 py-1 text-sm lg:text-[1.05rem] text-gray-600 dark:text-gray-300">
@@ -152,10 +184,13 @@ const page = () => {
         </div>
       </section>
 
-      <section id="about">
-        <div className="py-12 md:py-32 lg:px-24 px-4 md:px-10">
+      <section id="about" className="sticky top-0 left-0 bg-white dark:bg-darkbg snap-section  overflow-y-scroll overscroll-y-auto h-screen  scrollbar-hide">
+        <div className="absolute w-full h-full z-">
+          {/* <ParticleBackground id="2" /> */}
+        </div>
+        <div className="py-12 md:py-32 lg:px-24 px-4 md:px-10 z-[100]">
           <div className="pb-12">
-            <h2 className="text-xl md:text-2xl lg:text-3xl text-indigo-500">
+            <h2 className="text-xl md:text-2xl lg:text-3xl text-indigo-500 font-semibold">
               About Me
             </h2>
             <p className="md:py-2 py-1 text-sm lg:text-[1.05rem] text-gray-600 dark:text-gray-300">
@@ -174,7 +209,7 @@ const page = () => {
             </div>
 
             <div className="">
-              <p className="text-sm lg:text-md leading-7 lg:leading-8 md:px-6 text-gray-500 dark:text-gray-200">
+              <p className="text-sm font-semibold bg-white dark:bg-darkbg bg-opacity-30 dark:bg-opacity-20  backdrop-blur p-6 lg:text-md leading-7 lg:leading-8 md:px-6 text-gray-500 dark:text-gray-200  rounded-md">
                 I am a passionate Full Stack Developer with experience in
                 building dynamic and user-friendly web applications. Skilled in
                 HTML, CSS, JavaScript, React.js, Next.js, PHP, Laravel, and
@@ -188,10 +223,11 @@ const page = () => {
         </div>
       </section>
 
-      <section id="skills">
+      <section id="skills" className="sticky top-0 left-0 bg-white dark:bg-darkbg snap-section  overflow-y-scroll overscroll-y-auto h-screen  scrollbar-hide">
+        
         <div className="py-12 md:py-32 lg:px-24 px-4 md:px-10">
           <div className="pb-12">
-            <h2 className="text-xl md:text-2xl lg:text-3xl text-indigo-500">
+            <h2 className="text-xl md:text-2xl lg:text-3xl text-indigo-500 font-semibold">
               My Skills
             </h2>
             <p className="md:py-2 py-1 text-sm lg:text-[1.05rem] text-gray-600 dark:text-gray-300">
@@ -218,10 +254,14 @@ const page = () => {
         </div>
       </section>
 
-      <section id="contact">
+      <section id="contact" className="sticky top-0 left-0 bg-white dark:bg-darkbg snap-section  overflow-y-scroll overscroll-y-auto h-screen  scrollbar-hide">
+        <div className="absolute w-full h-full z-">
+          {/* <ParticleBackground id="3" /> */}
+        </div>
+
         <div className="py-12 md:py-32 lg:px-24 px-4 md:px-10">
           <div className="pb-12">
-            <h2 className="text-xl md:text-2xl lg:text-3xl text-indigo-500">
+            <h2 className="text-xl md:text-2xl lg:text-3xl text-indigo-500 font-semibold">
               Contact Me
             </h2>
             <p className="md:py-2 py-1 text-sm lg:text-[1.05rem] text-gray-600 dark:text-gray-300">
@@ -230,8 +270,9 @@ const page = () => {
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div className="form">
+            <div className="form bg-white dark:bg-darkbg dark:bg-opacity-10 bg-opacity-30 backdrop-blur rounded-md p-6 ">
               <form action="">
+                <h4 className="py-6 text-gray-600 text-lg font-bold rounded-md">Send Me a Message</h4>
                 <div className="flex flex-col-reverse gap-1">
                   <input
                     type="text"
@@ -278,7 +319,7 @@ const page = () => {
             </div>
 
             <div className="bg-gray-100   aspect-[5/3] rounded-2xl dark:bg-gray-900 relative">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3219.026338478856!2d-0.19587219308806253!3d5.64993214364426!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdf9c7ebaeabe93%3A0xd78257e67498c1a0!2sUniversity%20of%20Ghana!5e0!3m2!1sen!2sgh!4v1716835348943!5m2!1sen!2sgh"  style={{border:0,position : "absolute",width :"100%",height : "100%"}}  loading="lazy" ></iframe>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3219.026338478856!2d-0.19587219308806253!3d5.64993214364426!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdf9c7ebaeabe93%3A0xd78257e67498c1a0!2sUniversity%20of%20Ghana!5e0!3m2!1sen!2sgh!4v1716835348943!5m2!1sen!2sgh" style={{ border: 0, position: "absolute", width: "100%", height: "100%" }} loading="lazy" ></iframe>
 
             </div>
           </div>

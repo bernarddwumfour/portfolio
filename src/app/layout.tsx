@@ -25,7 +25,7 @@ export default function RootLayout({
           <Header />
           <Socials />
           {children}
-          <Footer />
+          {/* <Footer /> */}
         </Providers>
       </body>
     </html>

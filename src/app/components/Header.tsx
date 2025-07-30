@@ -10,7 +10,7 @@ const Header = () => {
 
   return (
     <header className='fixed top-0 left-0 z-20 w-full backdrop-blur'>
-      <div className="flex relative justify-between dark:bg-darkerbg bg-white items-center px-4 py-[0.6rem] shadow-[0px_0px_6px_0px_rgba(0,0,0,0.15)] rounded-xl md:m-8 m-3  md:mb-0 mb-0">
+      <div className="flex relative justify-between dark:bg-darkerbg bg-opacity-20 dark:bg-opacity-40  backdrop-blur bg-white items-center px-4 py-[0.6rem] shadow-[0px_0px_6px_0px_rgba(0,0,0,0.15)] rounded-xl md:m-8 m-3  md:mb-0 mb-0">
         <div className="block md:invisible absolute top-6 left-4 text-indigo-500" onClick={()=>setnavopen(prev=>!prev)}>
           <FaBars />
         </div>
