@@ -16,7 +16,7 @@ interface TypingAnimationProps {
 export default function TypingAnimation({
   id,
   sequence,
-  speed = 40,
+  speed = 40 as any,
   deletionSpeed = 30,
   style,
   className,
