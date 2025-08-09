@@ -10,7 +10,7 @@ interface TypingAnimationProps {
   deletionSpeed?: any;
   style?: React.CSSProperties;
   className?: string;
-  wrapper?: string;
+  wrapper?: any;
 }
 
 export default function TypingAnimation({
