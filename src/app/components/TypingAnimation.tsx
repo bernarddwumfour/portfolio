@@ -7,7 +7,7 @@ interface TypingAnimationProps {
   id: string;
   sequence: Array<string | number>;
   speed?: any;
-  deletionSpeed?: number;
+  deletionSpeed?: any;
   style?: React.CSSProperties;
   className?: string;
   wrapper?: string;
