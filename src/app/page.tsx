@@ -77,7 +77,7 @@ const page = () => {
     <main className="dark:bg-darkbg min-h-screen">
       <section
         id="hero"
-        className="text-center snap-section relative py-12 md:py-36 h-screen lg:px-16 px-3 md:px-12 flex flex-col-reverse lg:flex-row gap-6 lg:gap-12 items-center overflow-hidden"
+        className="text-center relative py-12 md:py-36 h-screen lg:px-16 px-3 md:px-12 flex flex-col-reverse lg:flex-row gap-6 lg:gap-12 items-center overflow-hidden"
       >
         <div className="absolute w-full h-full z-10">
           <ParticleBackground id="1" />
@@ -136,7 +136,7 @@ const page = () => {
         </div> */}
       </section>
 
-      <section id="projects" className="sticky top-0 left-0 bg-white dark:bg-darkbg snap-section  overflow-y-scroll overflow-x-hidden overscroll-y-auto h-screen  scrollbar-hide">
+      <section id="projects" className="sticky top-0 left-0 bg-white dark:bg-darkbg  overflow-y-scroll overflow-x-hidden overscroll-y-auto h-screen  scrollbar-hide">
 
         <div className="circle w-96 h-96 absolute -top-8 -left-8 rounded-full opacity-40 bg-indigo-700 blur-[180px] z-0 ">
           {" "}
@@ -184,7 +184,7 @@ const page = () => {
         </div>
       </section>
 
-      <section id="about" className="sticky top-0 left-0 bg-white dark:bg-darkbg snap-section  overflow-y-scroll overscroll-y-auto h-screen  scrollbar-hide">
+      <section id="about" className="sticky top-0 left-0 bg-white dark:bg-darkbg  overflow-y-scroll overscroll-y-auto h-screen  scrollbar-hide">
         <div className="absolute w-full h-full z-">
           {/* <ParticleBackground id="2" /> */}
         </div>
@@ -223,7 +223,7 @@ const page = () => {
         </div>
       </section>
 
-      <section id="skills" className="sticky top-0 left-0 bg-white dark:bg-darkbg snap-section  overflow-y-scroll overscroll-y-auto h-screen  scrollbar-hide">
+      <section id="skills" className="sticky top-0 left-0 bg-white dark:bg-darkbg  overflow-y-scroll overscroll-y-auto h-screen  scrollbar-hide">
         
         <div className="py-12 md:py-32 lg:px-24 px-4 md:px-10">
           <div className="pb-12">
@@ -254,7 +254,7 @@ const page = () => {
         </div>
       </section>
 
-      <section id="contact" className="sticky top-0 left-0 bg-white dark:bg-darkbg snap-section  overflow-y-scroll overscroll-y-auto h-screen  scrollbar-hide">
+      <section id="contact" className="sticky top-0 left-0 bg-white dark:bg-darkbg  overflow-y-scroll overscroll-y-auto h-screen  scrollbar-hide">
         <div className="absolute w-full h-full z-">
           {/* <ParticleBackground id="3" /> */}
         </div>
