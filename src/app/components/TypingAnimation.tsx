@@ -6,7 +6,7 @@ import { TypeAnimation } from 'react-type-animation';
 interface TypingAnimationProps {
   id: string;
   sequence: Array<string | number>;
-  speed?: number;
+  speed?: any;
   deletionSpeed?: number;
   style?: React.CSSProperties;
   className?: string;
