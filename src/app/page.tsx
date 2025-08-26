@@ -137,7 +137,7 @@ const page = () => {
         </div> */}
       </section>
 
-      <section id="projects" className="bg-white dark:bg-darkbg overflow-x-hidden ">
+      <section id="projects" className="relative z-1 overflow-x-hidden ">
 
         <div className="py-12 md:py-32 lg:px-24 px-4 md:px-10">
           <div className="pb-12">
@@ -175,7 +175,7 @@ const page = () => {
         </div>
       </section>
 
-      <section id="about" className="bg-white dark:bg-darkbg ">
+      <section id="about" className=" relative z-1 ">
         <div className="py-12 md:py-32 lg:px-24 px-4 md:px-10">
           <div className="pb-12">
             <h2 className="text-xl md:text-2xl lg:text-3xl text-indigo-500 font-semibold">
@@ -211,7 +211,7 @@ const page = () => {
         </div>
       </section>
 
-      <section id="skills" className="bg-white dark:bg-darkbg ">
+      <section id="skills" className="relative z-1 ">
         
         <div className="py-12 md:py-32 lg:px-24 px-4 md:px-10">
           <div className="pb-12">
@@ -227,7 +227,7 @@ const page = () => {
             {skills &&
               skills.map((skill) => (
                 <div
-                  className="flex gap-4 items-center bg-white rounded-lg px-2 py-2 shadow-[0px_0px_4px_0px_rgba(0,0,0,0.1)] dark:bg-darkerbg "
+                  className="flex gap-4 items-center bg-white rounded-lg px-2 py-2 shadow-[0px_0px_4px_0px_rgba(0,0,0,0.1)] dark:bg-darkerbg bg-opacity-30 dark:bg-opacity-20  backdrop-blur"
                   key={skill.skill}
                 >
                   <span className="p-3 lg:p-5 text-white bg-indigo-600 rounded-md text-xl lg:text-4xl">
@@ -242,7 +242,7 @@ const page = () => {
         </div>
       </section>
 
-      <section id="contact" className="bg-white dark:bg-darkbg ">
+      <section id="contact" className="relative z-1">
         <div className="absolute w-full h-full z-">
           {/* <ParticleBackground id="3" /> */}
         </div>
