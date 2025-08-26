@@ -74,7 +74,13 @@ let projects: {
 const page = () => {
   let dark = true;
   return (
-    <main className="dark:bg-darkbg min-h-screen">
+    <main className="dark:bg-darkbg">
+       <div className="circle w-[450px] h-[450px] fixed animate-float-slower -top-8 -left-8 rounded-full opacity-40 bg-indigo-700 blur-[180px] z-0 ">
+          {" "}
+        </div>
+        <div className="circle w-[450px] h-[450px] fixed animate-float-gentle -bottom-8 -right-8 rounded-full opacity-20 bg-indigo-600 blur-3xl z-0 ">
+          {" "}
+        </div>
       <section
         id="hero"
         className="text-center relative py-12 md:py-36 h-screen lg:px-16 px-3 md:px-12 flex flex-col-reverse lg:flex-row gap-6 lg:gap-12 items-center overflow-hidden"
@@ -82,12 +88,7 @@ const page = () => {
         <div className="absolute w-full h-full z-10">
           <ParticleBackground id="1" />
         </div>
-        <div className="circle w-96 h-96 absolute -top-8 -left-8 rounded-full opacity-40 bg-indigo-700 blur-[180px] z-0 ">
-          {" "}
-        </div>
-        <div className="circle w-96 h-96 absolute -bottom-8 -right-8 rounded-full opacity-20 bg-indigo-600 blur-3xl z-0 ">
-          {" "}
-        </div>
+       
         <div className="py-40 pt-32 flex items-center flex-col w-full relative z-10 ">
 
           <h1 className="text-3xl lg:text-[4.5rem] text-indigo-500 leading-[150%] font-bold ">
@@ -136,17 +137,7 @@ const page = () => {
         </div> */}
       </section>
 
-      <section id="projects" className="sticky top-0 left-0 bg-white dark:bg-darkbg  overflow-y-scroll overflow-x-hidden overscroll-y-auto h-screen  scrollbar-hide">
-
-        <div className="circle w-96 h-96 absolute -top-8 -left-8 rounded-full opacity-40 bg-indigo-700 blur-[180px] z-0 ">
-          {" "}
-        </div>
-        <div className="circle w-96 h-96 absolute -bottom-8 -right-8 rounded-full opacity-20 bg-indigo-600 blur-3xl z-0 ">
-          {" "}
-        </div>
-        <div className="circle w-96 h-96 absolute -translate-y-1/2 -translate-x-1/2 top-1/2 left-1/2 rounded-full opacity-40 bg-indigo-600 blur-3xl z-0 ">
-          {" "}
-        </div>
+      <section id="projects" className="bg-white dark:bg-darkbg overflow-x-hidden ">
 
         <div className="py-12 md:py-32 lg:px-24 px-4 md:px-10">
           <div className="pb-12">
@@ -184,11 +175,8 @@ const page = () => {
         </div>
       </section>
 
-      <section id="about" className="sticky top-0 left-0 bg-white dark:bg-darkbg  overflow-y-scroll overscroll-y-auto h-screen  scrollbar-hide">
-        <div className="absolute w-full h-full z-">
-          {/* <ParticleBackground id="2" /> */}
-        </div>
-        <div className="py-12 md:py-32 lg:px-24 px-4 md:px-10 z-[100]">
+      <section id="about" className="bg-white dark:bg-darkbg ">
+        <div className="py-12 md:py-32 lg:px-24 px-4 md:px-10">
           <div className="pb-12">
             <h2 className="text-xl md:text-2xl lg:text-3xl text-indigo-500 font-semibold">
               About Me
@@ -223,7 +211,7 @@ const page = () => {
         </div>
       </section>
 
-      <section id="skills" className="sticky top-0 left-0 bg-white dark:bg-darkbg  overflow-y-scroll overscroll-y-auto h-screen  scrollbar-hide">
+      <section id="skills" className="bg-white dark:bg-darkbg ">
         
         <div className="py-12 md:py-32 lg:px-24 px-4 md:px-10">
           <div className="pb-12">
@@ -254,7 +242,7 @@ const page = () => {
         </div>
       </section>
 
-      <section id="contact" className="sticky top-0 left-0 bg-white dark:bg-darkbg  overflow-y-scroll overscroll-y-auto h-screen  scrollbar-hide">
+      <section id="contact" className="bg-white dark:bg-darkbg ">
         <div className="absolute w-full h-full z-">
           {/* <ParticleBackground id="3" /> */}
         </div>

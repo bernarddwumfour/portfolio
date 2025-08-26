@@ -7,19 +7,6 @@
   font-family: "Nunito", sans-serif;
 }
 
-main {
-  scroll-snap-type: y mandatory;
-  scroll-behavior: auto;
-  overflow-y: scroll; /* or auto */
-  height: 100vh; /* Essential for scroll container */
-}
-
-
-/* Section styling */
-.snap-section {
-  scroll-snap-align: start;
-  scroll-snap-stop: always; /* vs 'normal' (default) */
-}
 
 /* 
 :root {
@@ -52,4 +39,40 @@ body {
   }
 } */
 
+@keyframes float-gentle {
+  0%, 100% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  25% {
+    transform: translate(-90px, -120px) rotate(-6deg);
+  }
+  50% {
+    transform: translate(75px, -210px) rotate(6deg);
+  }
+  75% {
+    transform: translate(-45px, -120px) rotate(-3deg);
+  }
+}
 
+@keyframes float-slower {
+  0%, 100% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  25% {
+    transform: translate(-120px, -105px) rotate(-4.5deg);
+  }
+  50% {
+    transform: translate(105px, -180px) rotate(4.5deg);
+  }
+  75% {
+    transform: translate(-60px, -105px) rotate(-3deg);
+  }
+}
+
+.animate-float-gentle {
+  animation: float-gentle 8s ease-in-out infinite;
+}
+
+.animate-float-slower {
+  animation: float-slower 10s ease-in-out infinite;
+}
