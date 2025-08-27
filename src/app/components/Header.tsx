@@ -7,6 +7,18 @@ import { FaBars } from 'react-icons/fa'
 
 const Header = () => {
   const [navopen,setnavopen] = useState(false)
+  const handleHireMeClick = (): void => {
+    const subject = encodeURIComponent("Hiring Inquiry - Let's Build Something Great");
+    const body = encodeURIComponent(
+      `Hello Bernard,\n\nI'm interested in hiring you for a project.\n\n` +
+      `Project Details:\n[Please describe your project here]\n\n` +
+      `My Contact Information: \n\n` +
+      `Looking forward to your response!`
+    );
+  
+    window.location.href = `mailto:bernarddwumfour25@gmail.com?subject=${subject}&body=${body}`;
+  };
+  
 
   return (
     <header className='fixed top-0 left-0 z-20 w-full backdrop-blur'>
@@ -24,7 +36,7 @@ const Header = () => {
 
         <div className="flex gap-8 items-center">
           <ThemeSwitch />
-          <Button>
+          <Button  onClick={handleHireMeClick}>
             Hire Me
           </Button>
         </div>
@@ -34,7 +46,7 @@ const Header = () => {
           <Link href="/about" className='dark:text-gray-300 dark:hover:text-indigo-600 text-gray-600 text-[0.85rem] hover:text-indigo-600'>About</Link>
           <Link href="/projects" className='dark:text-gray-300 dark:hover:text-indigo-600 text-gray-600 text-[0.85rem] hover:text-indigo-600'>Projects</Link>
           <Link href="/blogs" className='dark:text-gray-300 dark:hover:text-indigo-600 text-gray-600 text-[0.85rem] hover:text-indigo-600'>Blogs</Link>
-          <a href="/Bernard Dwumfour_CV.pdf" download>
+          <a href="/Bernard Dwumfour - Frontend Development (Web and mobile).pdf" download>
             <Button>Download CV</Button>
           </a>
         </menu>
