@@ -47,7 +47,7 @@ let projects: { ui: project[]; software: project[] } = {
       description:
         "A scholarships listing and management web application.",
       image: "/myScholarshub.png",
-      technologies: ["Nextjs", "TailwindCSS", "Typescript","Shadcn UI"],
+      technologies: ["Nextjs", "TailwindCSS", "Typescript", "Shadcn UI"],
       url: "https://myscholarshub.vercel.app/",
     },
     {
@@ -55,7 +55,7 @@ let projects: { ui: project[]; software: project[] } = {
       description:
         "Ecommerce website and products management system.",
       image: "/estore.png",
-      technologies: ["Nextjs", "TailwindCSS", "Typescript","Shadcn UI","Python Django","Postgresql"],
+      technologies: ["Nextjs", "TailwindCSS", "Typescript", "Shadcn UI", "Python Django", "Postgresql"],
       url: "https://estore-frontend-boqb.vercel.app",
     },
     {
@@ -72,7 +72,7 @@ let projects: { ui: project[]; software: project[] } = {
         "My previous portfolio website with some websites I developed whiles still learning to code.",
       image: "/portfolio.png",
       technologies: ["HTML", "CSS", "Reactjs"],
-      url: "https://bernarddwumfour.vercel.app",
+      url: "https://www.bernarddwumfour.vercel.app",
     },
   ],
 };
@@ -80,9 +80,9 @@ let projects: { ui: project[]; software: project[] } = {
 const page = () => {
   return (
     <main className="min-h-screen pt-12">
-      <section id="projects">
+      <section id="projects" className="max-w-[1600px] relative left-1/2 -translate-x-1/2">
         <div className=" pt-20 py-32 lg:px-24 px-3">
-        <div className="pb-12">
+          <div className="pb-12">
             <h2 className="text-xl md:text-2xl lg:text-3xl text-indigo-500">
               My projects
             </h2>
@@ -116,7 +116,7 @@ const page = () => {
           <div className="h-24"></div>
           <h3 className="pb-6 lg:text-xl text-indigo-600 font-semibold py-4">Web development Projects</h3>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-          {projects &&
+            {projects &&
               projects.software.map((project) => (
                 <a key={project.name}
                   href={`${project.url}`}

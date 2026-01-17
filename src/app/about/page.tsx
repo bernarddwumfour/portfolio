@@ -4,10 +4,10 @@ import React from "react";
 const page = () => {
   return (
     <main className="min-h-screen pt-12">
-        <section id="about">
-        <div className="py-32 lg:px-24">
+        <section id="about"  className="max-w-[1600px] relative left-1/2 -translate-x-1/2">
+        <div className=" pt-20 py-32 lg:px-24 px-3">
           <div className="pb-12">
-            <h2 className="text-3xl text-indigo-600">About Me</h2>
+            <h2 className="text-xl md:text-2xl lg:text-3xl text-indigo-500">About Me</h2>
             <p className="py-2 text-gray-600 dark:text-gray-300">
               Passionate Software And Machine Learning Engineer
             </p>
