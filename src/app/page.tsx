@@ -87,7 +87,7 @@ const page = () => {
         className="text-center relative py-12 md:py-36 h-screen lg:px-16 px-3 md:px-12 flex flex-col-reverse lg:flex-row gap-6 lg:gap-12 items-center overflow-hidden"
       >
         <div className="absolute w-full h-full z-10">
-          <ParticleBackground id="1" />
+          <ParticleBackground />
         </div>
 
         <div className="py-40 pt-32 flex items-center flex-col w-full relative z-10 ">

@@ -4,14 +4,13 @@ import Particles from "react-tsparticles";
 import { Engine } from "tsparticles-engine";
 import { loadSlim } from "tsparticles-slim";
 
-const ParticleBackground = ({ id }: { id: string }) => {
+const ParticleBackground = () => {
   const particlesInit = useCallback(async (engine: Engine) => {
     await loadSlim(engine);
   }, []);
 
   return (
     <Particles
-      id={`tsparticles-${id}`}
       init={particlesInit}
       options={{
         style: {
@@ -79,7 +78,7 @@ const ParticleBackground = ({ id }: { id: string }) => {
             value: 0.2,
           },
           shape: {
-            type: "star",
+            type: "circle",
           },
           size: {
             value: { min: 1, max: 5 },
