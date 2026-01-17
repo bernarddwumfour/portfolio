@@ -20,13 +20,6 @@ let projects: { ui: project[]; software: project[] } = {
       url: "https://www.figma.com/design/rp4oDJ7XWsH5z50KwSACUd/Untitled?node-id=0-1&t=LstXrxVJlh5LugzK-1",
     },
     {
-      name: "Herbal UI",
-      description: "A  website Ui for herbal products designed with Figma",
-      image: "/herbalui.png",
-      technologies: ["Figma"],
-      url: "https://www.figma.com/file/EeTZQiqhsiJ6OanfDcDcwh/Untitled?type=design&node-id=0-1&mode=design&t=ksTvfDoJ1BXyH7ZJ-0",
-    },
-    {
       name: "SparkleScrub UI",
       description: "A  website Ui for a cleaning company designed with Figma",
       image: "/sparklescrub.png",
@@ -39,6 +32,13 @@ let projects: { ui: project[]; software: project[] } = {
       image: "/furnichar.png",
       technologies: ["Figma"],
       url: "https://www.figma.com/design/Te914L3OTQXb2E9JQtK1zV/Untitled?node-id=0-1&t=7edxXdc37ZtESBw9-0",
+    },
+    {
+      name: "Herbal UI",
+      description: "A  website Ui for herbal products designed with Figma",
+      image: "/herbalui.png",
+      technologies: ["Figma"],
+      url: "https://www.figma.com/file/EeTZQiqhsiJ6OanfDcDcwh/Untitled?type=design&node-id=0-1&mode=design&t=ksTvfDoJ1BXyH7ZJ-0",
     },
   ],
   software: [
@@ -64,7 +64,7 @@ let projects: { ui: project[]; software: project[] } = {
         "A privacy policy sumurisation website",
       image: "/poleasy.png",
       technologies: ["Nextjs", "SASS", "Typescript"],
-      url: "https://www.final-year-project-five-ivory.vercel.app/",
+      url: "https://final-year-project-five-ivory.vercel.app/",
     },
     {
       name: "Portfolio",
@@ -72,7 +72,7 @@ let projects: { ui: project[]; software: project[] } = {
         "My previous portfolio website with some websites I developed whiles still learning to code.",
       image: "/portfolio.png",
       technologies: ["HTML", "CSS", "Reactjs"],
-      url: "https://www.bernarddwumfour.vercel.app",
+      url: "https://bernarddwumfour.vercel.app",
     },
   ],
 };
