@@ -17,7 +17,7 @@ let projects: { ui: project[]; software: project[] } = {
       description: "A flower website Ui designed with Figma",
       image: "/plantui.png",
       technologies: ["Figma"],
-      url: "https://www.figma.com/design/rp4oDJ7XWsH5z50KwSACUd/Untitled?node-id=0-1&t=uq5xTFgBtajguovh-0",
+      url: "https://www.figma.com/design/rp4oDJ7XWsH5z50KwSACUd/Untitled?node-id=0-1&t=LstXrxVJlh5LugzK-1",
     },
     {
       name: "Herbal UI",
@@ -43,12 +43,28 @@ let projects: { ui: project[]; software: project[] } = {
   ],
   software: [
     {
+      name: "myScholarshub",
+      description:
+        "A scholarships listing and management web application.",
+      image: "/myScholarshub.png",
+      technologies: ["Nextjs", "TailwindCSS", "Typescript","Shadcn UI"],
+      url: "https://myscholarshub.vercel.app/",
+    },
+    {
+      name: "Estore",
+      description:
+        "Ecommerce website and products management system.",
+      image: "/estore.png",
+      technologies: ["Nextjs", "TailwindCSS", "Typescript","Shadcn UI","Python Django","Postgresql"],
+      url: "https://estore-frontend-boqb.vercel.app",
+    },
+    {
       name: "PolEasy",
       description:
         "A privacy policy sumurisation website",
       image: "/poleasy.png",
       technologies: ["Nextjs", "SASS", "Typescript"],
-      url: "final-year-project-five-ivory.vercel.app/",
+      url: "https://www.final-year-project-five-ivory.vercel.app/",
     },
     {
       name: "Portfolio",
@@ -56,7 +72,7 @@ let projects: { ui: project[]; software: project[] } = {
         "My previous portfolio website with some websites I developed whiles still learning to code.",
       image: "/portfolio.png",
       technologies: ["HTML", "CSS", "Reactjs"],
-      url: "bernarddwumfour.vercel.app",
+      url: "https://www.bernarddwumfour.vercel.app",
     },
   ],
 };
@@ -81,7 +97,7 @@ const page = () => {
             {projects &&
               projects.ui.map((project) => (
                 <a key={project.name}
-                  href={`http://${project.url}`}
+                  href={`${project.url}`}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -103,7 +119,7 @@ const page = () => {
           {projects &&
               projects.software.map((project) => (
                 <a key={project.name}
-                  href={`http://${project.url}`}
+                  href={`${project.url}`}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
