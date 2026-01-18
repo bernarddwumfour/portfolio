@@ -6,7 +6,7 @@ const page = () => {
   return (
     <main className="min-h-screen pt-12">
       <section id="blogs" className="max-w-[1600px] relative left-1/2 -translate-x-1/2">
-        <div className="py-32 lg:px-24 px-3">
+        <div className="py-32 lg:px-6 px-3">
           <div className="pb-12">
             <h2 className="text-xl md:text-2xl lg:text-3xl text-indigo-500">My Blogs</h2>
             <p className="md:py-2 py-1 text-sm lg:text-[1.05rem] text-gray-600 dark:text-gray-300">

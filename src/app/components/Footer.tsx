@@ -6,7 +6,7 @@ import { FaXTwitter } from "react-icons/fa6";
 const Footer = () => {
   return (
    <footer className="w-full dark:bg-darkbg">
-     <div className="py-12 flex gap-8 flex-col justify-between dark:bg-darkerbg bg-white items-center px-12 shadow-[0px_0px_6px_0px_rgba(0,0,0,0.15)]  rounded-2xl md:m-8 m-3 mb-6">
+     <div className="py-12 max-w-[1600px] flex gap-8 flex-col justify-between dark:bg-darkerbg bg-white items-center px-12 shadow-[0px_0px_6px_0px_rgba(0,0,0,0.15)]  rounded-2xl  m-3 mb-6 md:mx-auto ">
       <menu className="flex gap-5 justify-between">
         <Link
           href="/"
