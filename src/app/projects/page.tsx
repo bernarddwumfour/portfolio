@@ -55,6 +55,14 @@ const projects: Project[] = [
     type: "ui"
   },
   {
+    name: "ExPpens UI",
+    description: "A personal budgetting and financial planning mobile application UI.",
+    image: "/expense.png",
+    technologies: ["Figma", "Wireframing"],
+    url: "https://www.figma.com/design/Y7yzFfmrrky8P2A8vfBvOu/Untitled?node-id=291-5260&t=mWfU1FfGZOGypG0z-1",
+    type: "ui"
+  },
+  {
     name: "myScholarshub",
     description: "A scholarships listing and management web application.",
     image: "/myScholarshub.png",
